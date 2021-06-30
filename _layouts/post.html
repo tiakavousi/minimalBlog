@@ -28,6 +28,6 @@ layout: default
   <h3> relative articles: </h3>
     {% assign relatives = site.posts | where: ctegories, post.title %}
     {% for post in relatives %} 
-      <p></p><a href="{{post.url | relative_url}}">{{post.title}}</a></p>
+      <p></p><a href="{{- post.url | relative_url -}}">{{post.title}}</a></p>
     {% endfor %}
 </article>
