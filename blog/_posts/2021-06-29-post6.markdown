@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "post 6 (javascript devOps)"
+date:   2021-06-29 00:18:53
+categories: javascript devOps
+author: Tayebe Kavousi
+
+---
+post 6
