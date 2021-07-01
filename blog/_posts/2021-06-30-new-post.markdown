@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "new post!"
-date:   2021-06-28 00:18:53
-categories: c programming
+date:   2021-06-30 00:18:53
+categories: programming
 ---
 my first blog post is here !
 
