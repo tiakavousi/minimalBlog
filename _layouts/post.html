@@ -25,9 +25,10 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
   
+  {% assign wordCount = page.content | number_of_words %}
+  <p class="post_content_size">words: {{wordCount}}</p>
 
-
-{{ page.category }}
+{{ page.category }} 
   
   <div class="relatedPosts">
     <h4>Related articles: </h4>
