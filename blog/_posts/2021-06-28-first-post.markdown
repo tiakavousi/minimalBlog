@@ -1,9 +1,0 @@
----
-layout: post
-title:  "first post!"
-date:   2021-06-28 00:18:53
-categories: programming
----
-my first blog post is here !
-
-
