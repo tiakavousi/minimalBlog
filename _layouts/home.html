@@ -6,7 +6,7 @@ layout: default
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-
+  <img src="{{- page.image | relative_url -}}" alt="" class="admin_photo">
   {{ content }}
   {%- include social.html -%}
 <!-- 
