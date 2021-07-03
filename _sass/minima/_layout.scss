@@ -19,7 +19,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $text-color;
   }
 }
 
@@ -75,7 +75,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: $text-color;
       }
     }
 
@@ -265,12 +265,8 @@
 }
 .copyright {
   text-align: center;
+  color: $text-color;
 }
 .social-media-list{
-  display:inline;
-  
-}
-.svg-icon{
-  color: black;
-  font-size: 2rem;
+  display:inline;  
 }
