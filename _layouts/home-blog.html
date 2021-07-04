@@ -12,7 +12,7 @@ layout: default
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
-    <h1>{{ year.name }}</h1>
+    <h1 class="post-year">{{ year.name }}</h1>
     <ul class="post-list">
       {%- for post in year.items -%}
       <li>
