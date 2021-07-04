@@ -209,11 +209,12 @@
   display: block;
   @include relative-font-size(1);
   font-weight:$base-font-weight ;
+  font-size: $base-font-size * 1.2;
 }
 .post-year {
-  display: block;
-  @include relative-font-size(1.2);
+  display: inline-block;
   font-weight: $base-font-weight * 1.5;
+  font-size: $base-font-size * 1.5;
 }
 
 
@@ -280,10 +281,7 @@
 }
 .related-article{
   font-weight: $base-font-weight;
-  font-size: $small-font-size;
-}
-.related-posts{
-  font-size: $small-font-size;
+  font-size: $base-font-size;
 }
 .post-details{
   margin-top: 15%;
@@ -291,6 +289,6 @@
   border-top: 1px dotted $grey-color;
   border-bottom: 1px dotted $grey-color;
   padding-top: 1%;
-  font-size: $small-font-size;
+  font-size: $base-font-size;
   line-height: $base-line-height * $base-font-size * 1.25;
 }
