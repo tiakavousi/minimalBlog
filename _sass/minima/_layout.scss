@@ -27,7 +27,6 @@
   @include relative-font-size(0.9);
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
-  
 
   .nav-trigger {
       display: none;
@@ -280,5 +279,18 @@
   display:inline;  
 }
 .related-article{
-  font-weight: $base-font-weight * 1.5;
+  font-weight: $base-font-weight;
+  font-size: $small-font-size;
+}
+.related-posts{
+  font-size: $small-font-size;
+}
+.post-details{
+  margin-top: 15%;
+  margin-bottom: 5%;
+  border-top: 1px dotted $grey-color;
+  border-bottom: 1px dotted $grey-color;
+  padding-top: 1%;
+  font-size: $small-font-size;
+  line-height: $base-line-height * $base-font-size * 1.25;
 }

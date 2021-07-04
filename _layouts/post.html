@@ -6,6 +6,12 @@ layout: default
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
+      {%- if page.author -%}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span class="p-author h-card" itemprop="name">Written by {{ page.author }}</span>
+        </span>
+      {%- endif -%}
+      <span> on </span>
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
@@ -22,17 +28,19 @@ layout: default
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  {%- if page.author -%}
-  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <span class="p-author h-card" itemprop="name">Author: {{ page.author }}</span>
-  </span>
-  {%- endif -%}
-  {% assign wordCount = page.content | number_of_words %}
-  <p class="post_content_size">words: {{wordCount}}</p>
+  <div class="post-details">
+    {%- if page.author -%}
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span class="p-author h-card" itemprop="name">Author: {{ page.author }}</span>
+    </span>
+    {%- endif -%}
+    {% assign wordCount = page.content | number_of_words %}
+    <p class="post_content_size">words: {{wordCount}}</p>
+  </div>
 
 {{ page.category }} 
   
-  <div class="relatedPosts">
+  <div class="related-posts">
     <h4>Related articles: </h4>
     
     {% assign maxRelated = 4 %}
