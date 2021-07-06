@@ -171,7 +171,6 @@
 }
 
 
-
 /**
  * Page content
  */
@@ -183,17 +182,54 @@
 .page-heading {
   @include relative-font-size(2);
 }
+// custom style
+.home-centre {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+.centre-item{
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.photo{
+  margin-top: 10%;
+}
+.admin_photo {
+  border-radius: 50%;
+  width: 20%;
+  margin-left: 40%; 
+}
+.social-media-list{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 100%;
+}
+.social-icon {
+  display: block;
+  padding: 2%;
+
+}
+
+.copyright {
+  text-align: center;
+  color: $text-color;
+}
+
+/* 
+* blog page
+*/
 .list-heading {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 7%;
+  justify-content: flex-start;
   line-height: $base-line-height * 2;
 }
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(2);
   font-weight: $base-font-weight * 1.75;
 }
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -209,15 +245,23 @@
 }
 
 .post-link {
-  display: block;
   @include relative-font-size(1);
   font-weight:$base-font-weight ;
   font-size: $base-font-size * 1.2;
 }
 .post-year {
-  display: inline-block;
   font-weight: $base-font-weight * 1.5;
   font-size: $base-font-size * 1.5;
+}
+//custom style
+.archived {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+  line-height:$base-line-height - 1%;
+}
+.archived.item {
+  padding: 2%;
 }
 
 
@@ -266,44 +310,7 @@
     }
   }
 }
-
-/* custom style */
-// home page
-.home-centre {
-  display: flex;
-  flex-direction: column;
-  justify-content:space-around;
-}
-.centre-item{
-  margin-top: 2%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.photo{
-  margin-top: 10%;
-}
-.admin_photo {
-  border-radius: 50%;
-  width:20%;
-  margin-left: 40%; 
-}
-
-.copyright {
-  text-align: center;
-  color: $text-color;
-}
-
-
-//blog page
-.archived {
-  display: flex;
-  flex-direction:row-reverse;
-  justify-content: space-between;
-  line-height:$base-line-height - 1%;
-  padding: 0 5%;
-}
-
-// post
+//custom style
 .related-article{
   font-weight: $base-font-weight;
   font-size: $base-font-size;
@@ -318,6 +325,12 @@
   font-size: $base-font-size;
   line-height: $base-line-height * $base-font-size * 1.25;
 }
+
+
+
+
+
+
 
 
 
