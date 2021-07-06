@@ -2,14 +2,8 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-            {%- if site.copyright -%}
-            <li class="copyright">&copy; {{ site.copyright }}{{'now'| date:'%Y'}}</li>
-            {%- endif -%}
-        </ul>
-      </div>
-    </div>
+    {%- if site.copyright -%}
+    <p class="copyright">&copy; {{ site.copyright }}{{'now'| date:'%Y'}}</p>
+    {%- endif -%}  
   </div>
 </footer>
