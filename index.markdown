@@ -5,3 +5,4 @@
 layout: home
 image: /assets/images/admin.jpeg
 ---
+explicite better than implicite

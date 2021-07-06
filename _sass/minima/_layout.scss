@@ -269,24 +269,40 @@
 }
 
 /* custom style */
-.admin_photo{
-  border-radius: 50%;
-  width:20%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .copyright {
   text-align: center;
   color: $text-color;
 }
-.social-media-list{
-  display:inline;  
+.home-centre {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
 }
+.centre-item{
+  padding-left:43%;
+  padding-top: 3%;
+}
+
+.admin_photo{
+  border-radius: 50%;
+  width:20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-media-list{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 .related-article{
   font-weight: $base-font-weight;
   font-size: $base-font-size;
 }
+
+
 .post-details{
   margin-top: 15%;
   margin-bottom: 5%;
