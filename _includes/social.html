@@ -1,6 +1,6 @@
-<div class="social-media-list">
-  {%- if site.linkedin_username -%}<a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a>{%- endif -%}
+<!-- <div class="social-media-list">
   {%- if site.github_username -%}<a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>{%- endif -%}
+  {%- if site.linkedin_username -%}<a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a>{%- endif -%}
   {%- if site.youtube_username -%}<a href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg></a>{%- endif -%}
   {%- if site.twitter_username -%}<a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg></a>{%- endif -%}
   {%- if site.instagram_username -%}<a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#instagram' | relative_url }}"></use></svg></a>{%- endif -%}
@@ -11,4 +11,12 @@
   {%- for mst in site.mastodon -%}{%- if mst.username and mst.instance -%}<a href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mastodon' | relative_url }}"></use></svg></a>{%- endif -%}{%- endfor -%}
   {%- if site.googleplus_username -%}<a href="https://plus.google.com/{{ site.googleplus_username| escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#googleplus' | relative_url }}"></use></svg></a>{%- endif -%}
   {%- if site.rss -%}<a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a>{%- endif -%}
+</div> -->
+
+
+<div class="social-media-list">
+  {%- if site.github_username -%}<a class="social-icon" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><i class="fab fa-github-alt fa-2x"></i></a>{%- endif -%}
+  {%- if site.linkedin_username -%}<a class="social-icon" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><i class="fab fa-linkedin-in fa-2x"></i></a>{%- endif -%}
+  {%- if site.youtube_username -%}<a class="social-icon" href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><i class="fab fa-youtube fa-2x"></i></a>{%- endif -%}
+  {%- if site.twitter_username -%}<a class="social-icon" href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><i class="fab fa-twitter fa-2x"></i></a>{%- endif -%}
 </div>
