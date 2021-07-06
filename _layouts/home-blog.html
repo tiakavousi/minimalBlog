@@ -9,7 +9,9 @@ layout: default
 
   {{ content }}
   {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  <div class="list-heading">
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  </div>
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
     <h1 class="post-year">{{ year.name }}</h1>
