@@ -292,3 +292,11 @@
   font-size: $base-font-size;
   line-height: $base-line-height * $base-font-size * 1.25;
 }
+.archived {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+  line-height:$base-line-height - 1%;
+  padding: 0 2%;
+}
+
