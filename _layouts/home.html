@@ -7,8 +7,8 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
   <div class="home-centre">
-    <div class="centre-item"><img src="{{- page.image | relative_url -}}" alt="" class="admin_photo"></div>
-    <div class="centre-item">{{ content }}</div>
+    <div class="centre-item photo"><img src="{{- page.image | relative_url -}}" alt="" class="admin_photo"></div>
+    <div class="centre-item content">{{ content }}</div>
     <div class="centre-item">{%- include social.html -%}</div>
   </div>
 </div>
