@@ -18,20 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #-------------------------- need to change ------------------------
-title: my first blog
-email: tayebekavousi68@gmail.com
+title: Minimal Blog
+email: mygmail@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
- this is a blog template bult with jekyll and hosted on github pages
-baseurl: "/myBlog" # the subpath of your site, e.g. /blog
+ this is a blog template built with jekyll and hosted on github pages
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://tayebe-kavousi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tayebeKavousi
+twitter_username: mytwitter
 github_username:  tayebe-kavousi
 
 #Author is the default for posts and is used in the footer 
 author: Tayebe Kavousi
 # copyright added below is not theme default and it contaions :
 # copuright: "company name"
-copyright: "myBlog"
+copyright: "MinimalBlog"
 linkedin_username: teya-kavousi
 youtube_username: myYouTube
 
