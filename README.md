@@ -1,12 +1,5 @@
+# this template is using Jekyll minima theme.
+
 # How to use this blog template :
-## _config.yml changes:
+# fork this repo and then change the _config.yml file (title, email, describtion, tweeter, github, youtube and linkedin username, and base url and url)
 
-1- change title
-
-2.change email
-
-3.change describtion
-
-4.change tweeter, github, youtube and linkedin username
-
-5.change base url and url
